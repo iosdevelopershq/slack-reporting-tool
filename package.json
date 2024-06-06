@@ -23,13 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slackapi/slack-reporting-tool.git"
+    "url": "git+https://github.com/iosdevelopershq/slack-reporting-tool.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/slackapi/slack-reporting-tool/issues"
+    "url": "https://github.com/iosdevelopershq/slack-reporting-tool/issues"
   },
-  "homepage": "https://github.com/slackapi/slack-reporting-tool#readme",
+  "homepage": "https://github.com/iosdevelopershq/slack-reporting-tool#readme",
   "optionalDependencies": {
     "concurrently": "^8.2.2",
     "ngrok": "^4.3.3"
