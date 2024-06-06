@@ -23,6 +23,16 @@ function getApp(): App {
     return new App({
       token: botToken,
       signingSecret: process.env.SLACK_SIGNING_SECRET,
+      customRoutes: [
+        {
+          path: '/health-check',
+          method: ['GET'],
+          handler: (req, res) => {
+            res.writeHead(200);
+            res.end(`Things are going just fine at ${req.headers.host}!`);
+          },
+        },
+      ],
       logLevel: LogLevel.DEBUG
     });
   } else {
