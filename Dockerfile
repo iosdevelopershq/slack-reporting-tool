@@ -3,6 +3,7 @@ FROM node:21
 WORKDIR /usr/src/app
 
 COPY package*.json ./
+COPY tsconfig.json ./
 
 RUN yarn install
 
