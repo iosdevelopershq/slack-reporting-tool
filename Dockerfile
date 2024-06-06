@@ -2,8 +2,9 @@ FROM node:21
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY package*.json yarn.lock ./
 COPY tsconfig.json ./
+COPY emptyTs.ts ./
 
 RUN yarn install
 
