@@ -4,13 +4,13 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install
+RUN yarn install
 
 COPY . .
 
-RUN npm run build
+RUN yarn run build
 
-ENTRYPOINT npm start
+ENTRYPOINT yarn start
 
 LABEL org.opencontainers.image.source https://github.com/iosdevelopershq/slack-reporting-tool
 
