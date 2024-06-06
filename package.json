@@ -8,8 +8,7 @@
     "start": "yarn run serve",
     "start:local": "yarn run build && concurrently --kill-others \"yarn start\" \"yarn run ngrok\"",
     "serve": "node ./build/app.js",
-    "ngrok": "node -r dotenv/config tools/ngrok.js",
-    "postinstall": "yarn run build"
+    "ngrok": "node -r dotenv/config tools/ngrok.js"
   },
   "dependencies": {
     "@slack/bolt": "^3.18.0",
