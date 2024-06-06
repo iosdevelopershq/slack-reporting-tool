@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:21
 
 WORKDIR /usr/src/app
 
@@ -12,6 +12,6 @@ RUN npm run build
 
 ENTRYPOINT npm start
 
-LABEL org.opencontainers.image.source https://github.com/slackapi/slack-reporting-tool
+LABEL org.opencontainers.image.source https://github.com/iosdevelopershq/slack-reporting-tool
 
-# docker run -p 3000:3000 -it slackapi/slack-reporting-tool --env-file ./.env
+# docker run -p 3000:3000 -it iosdevelopershq/slack-reporting-tool --env-file ./.env
