@@ -72,7 +72,7 @@ function getApp(): App {
               installQuery.teamId,
             ]
           ).then(async ([rows]) => {
-            if (rows.length > 0) {
+            if ((rows as any).length > 0) {
               const results = rows as RowDataPacket;
               return results[0]["installation"];
             } else {
